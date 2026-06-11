@@ -195,10 +195,6 @@ button { font-family: inherit; cursor: pointer; }
   color: #fff;
   font-size: 20px;
 }
-
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
 .hero {
   background: var(--hero-bg);
   position: relative;
@@ -207,18 +203,29 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0;
 }
 
-/* Right-side door/wall photo bleed */
 .hero::after {
   content: '';
   position: absolute;
-  top: 0; right: 0;
+  top: 0;
+  right: 0;
   width: 50%;
   height: 100%;
-  background:
-    url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80&fit=crop')
-    center / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.8) 100%);
-          mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.55) 35%, rgba(0,0,0,0.8) 100%);
+
+  background: url('hero-bg.jpeg') center center / cover no-repeat;
+
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,0.55) 35%,
+    rgba(0,0,0,0.8) 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,0.55) 35%,
+    rgba(0,0,0,0.8) 100%
+  );
+
   z-index: 0;
 }
 
@@ -281,10 +288,8 @@ button { font-family: inherit; cursor: pointer; }
   flex-shrink: 0;
 }
 
-/* Hero buttons */
 .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
-/* Hero right – product on wall */
 .hero-image {
   flex: 0 0 340px;
   display: flex;
@@ -302,7 +307,6 @@ button { font-family: inherit; cursor: pointer; }
   height: 380px;
 }
 
-/* Product plate */
 .product-plate {
   width: 200px;
   background: linear-gradient(160deg, #d4aa60 0%, #f0cc7a 40%, #c89530 100%);
@@ -394,7 +398,7 @@ button { font-family: inherit; cursor: pointer; }
    TRUST BAR
    ============================================================ */
 .trust-bar {
-    background: #07111f;
+    background: #1a2744;
     padding: 22px 0;
     width: 80%;
     margin: 0 auto; /* Center */
@@ -472,19 +476,25 @@ button { font-family: inherit; cursor: pointer; }
 
 .what-inner {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 64px;
 }
 
 /* Phone mockup */
 .phone-mockup-wrap {
-  flex: 0 0 220px;
+  flex: 0 0 260px;
+  height: 400px;
   display: flex;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 32px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.25));
 }
 
 .phone-mockup {
-  width: 200px;
+  width: 300px;
   background: #111827;
   border-radius: 38px;
   padding: 10px;
@@ -838,17 +848,28 @@ button { font-family: inherit; cursor: pointer; }
 /* ============================================================
    COMPARISON TABLE
    ============================================================ */
-.compare-section { background: #f5f7fb; padding: 8px 0; }
+.compare-section {
+  background: #f5f7fb;
+  padding: 8px 0;
+}
 
 .compare-inner {
   display: flex;
   align-items: center;
-   background: #0f1e3d;
-   border-radius: 30px;
-   padding:30px
+  background-image: url('footer-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding: 30px;
 }
 
-.compare-content { flex: 1; }
+.compare-content {
+  flex: 1;
+  /* background: url('footer-bg.jpeg') center / cover no-repeat; */
+  border-radius: 16px;
+  padding: 24px;
+}
 
 .compare-heading {
   font-size: 22px;
@@ -859,7 +880,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 .compare-table {
-  width: 100%;
+  width: 50%;
   border-collapse: collapse;
 }
 
@@ -918,10 +939,12 @@ button { font-family: inherit; cursor: pointer; }
 /* Compare – product plate on right */
 .compare-product {
   flex: 0 0 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  min-height: 520px;
+  background-image: url('footer-bg.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
 }
 
 .compare-plate {
