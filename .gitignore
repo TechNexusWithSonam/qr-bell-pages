@@ -1,7 +1,0 @@
-node_modules/
-*.png
-*.py
-compare_images.js
-a.txt
-package-lock.json
-package.json

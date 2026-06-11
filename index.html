@@ -1,413 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>QR Bell</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QRBELL – Connect Instantly. Stay Private.</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-    <div class="container">
-
-        <a class="navbar-brand fw-bold" href="#">
-            QRBELL
-        </a>
-
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">How It Works</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Use Cases</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-
-            <a href="#" class="btn btn-warning fw-semibold">
-                Get QR Bell
-            </a>
-
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fa-solid fa-bell"></i>
         </div>
+        <div class="logo-text">
+          <span class="logo-brand">QRBELL</span>
+          <span class="logo-tagline">Connect Instantly. Stay Private.</span>
+        </div>
+      </div>
 
+      <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">How It Works</a>
+        <a href="#">Use Cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <button class="btn-primary btn-sm">Get QR Bell</button>
+
+      <button class="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-</nav>
+  </header>
 
-<!-- Hero -->
-<section class="hero-section">
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <!-- Left -->
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Connect Instantly.<br />
+          <span class="yellow">Stay Private.</span>
+        </h1>
+        <p class="hero-sub">Smart QR Bell for Homes, Vehicles &amp; Businesses</p>
 
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-6">
-
-                <h1 class="hero-title">
-                    Connect Instantly.
-                    <span>Stay Private.</span>
-                </h1>
-
-                <p class="hero-text">
-                    Smart QR Bell for Homes, Vehicles & Businesses
-                </p>
-
-                <div class="feature-tags">
-                    <span><i class="bi bi-x-circle"></i> No App</span>
-                    <span><i class="bi bi-x-circle"></i> No Wiring</span>
-                    <span><i class="bi bi-x-circle"></i> No Number Sharing</span>
-                </div>
-
-                <div class="mt-4">
-                    <a href="#" class="btn btn-warning btn-lg me-3">
-                        Get Your QR Bell
-                    </a>
-
-                    <a href="#" class="btn btn-outline-light btn-lg">
-                        Watch Demo
-                    </a>
-                </div>
-
-            </div>
-
-            <div class="col-lg-6 text-center mt-5 mt-lg-0">
-
-                <img
-                    src="assets/images/homepage/1.png"
-                    class="img-fluid rounded"
-                    alt="QR Bell">
-
-            </div>
-
+        <div class="hero-pills">
+          <span class="pill"><i class="fa-solid fa-ban"></i> No App</span>
+          <span class="pill"><i class="fa-solid fa-plug-circle-xmark"></i> No Wiring</span>
+          <span class="pill"><i class="fa-solid fa-phone-slash"></i> No Number Sharing</span>
         </div>
 
+        <div class="hero-btns">
+          <button class="btn-primary">Get Your QR Bell <i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn-outline-light"><i class="fa-solid fa-circle-play"></i> Watch Demo</button>
+        </div>
+      </div>
+
+      <!-- Right – product image placeholder -->
+      <div class="hero-image">
+        <div class="product-plate">
+          <div class="plate-logo">QRBELL</div>
+          <div class="plate-qr">
+            <!-- QR code placeholder grid -->
+            <div class="qr-mock"></div>
+          </div>
+          <div class="plate-bell-icon"><i class="fa-solid fa-bell"></i></div>
+          <div class="plate-label">SCAN TO CONNECT</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</section>
-
-<!-- Features Strip -->
-
-<section class="feature-strip">
-
-    <div class="container">
-
-        <div class="row text-center">
-
-            <div class="col-md-3">
-                <i class="bi bi-shield-check"></i>
-                <h6>Privacy Protected</h6>
-                <p>Your number stays safe</p>
-            </div>
-
-            <div class="col-md-3">
-                <i class="bi bi-patch-check"></i>
-                <h6>Made in India</h6>
-                <p>Proudly Indian Product</p>
-            </div>
-
-            <div class="col-md-3">
-                <i class="bi bi-gear"></i>
-                <h6>Easy Setup</h6>
-                <p>Install in seconds</p>
-            </div>
-
-            <div class="col-md-3">
-                <i class="bi bi-lock"></i>
-                <h6>Secure Communication</h6>
-                <p>Safe & Reliable</p>
-            </div>
-
+  <!-- =========================================================
+       TRUST / FEATURE BAR
+  ========================================================== -->
+  <div class="trust-bar">
+    <div class="container trust-inner">
+      <div class="trust-item">
+        <i class="fa-solid fa-shield-halved trust-icon"></i>
+        <div>
+          <strong>Privacy Protected</strong>
+          <p>Your number stays safe</p>
         </div>
-
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-flag trust-icon"></i>
+        <div>
+          <strong>Made in India</strong>
+          <p>Proudly Indian Product</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-bolt trust-icon"></i>
+        <div>
+          <strong>Easy to Setup</strong>
+          <p>Install in seconds</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-lock trust-icon"></i>
+        <div>
+          <strong>Secure Communication</strong>
+          <p>Safe &amp; reliable</p>
+        </div>
+      </div>
     </div>
+  </div>
 
-</section>
-
-<!-- About -->
-
-<section class="py-5">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-5 text-center">
-                <img src="assets/images/homepage/2.png" class="img-fluid">
+  <!-- =========================================================
+       WHAT IS QRBELL
+  ========================================================== -->
+  <section class="what-section">
+    <div class="container what-inner">
+      <!-- Left – phone mockup -->
+      <div class="phone-mockup-wrap">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="phone-notif">
+              <div class="notif-header">Visitor at<br /><strong>My Home</strong></div>
+              <div class="notif-msg">Someone viewed your QR Bell.</div>
+              <div class="notif-time">2:41 PM</div>
+              <div class="notif-btns">
+                <button class="notif-call">Call Now</button>
+                <button class="notif-msg-btn">Send Message</button>
+              </div>
             </div>
-
-            <div class="col-lg-7">
-
-                <small class="text-warning fw-bold">
-                    WHAT IS QRBELL?
-                </small>
-
-                <h2 class="fw-bold mb-4">
-                    A Smarter Way to Connect
-                </h2>
-
-                <p>
-                    QRBELL is a smart QR-based communication system
-                    that helps visitors, delivery partners and vehicle
-                    owners connect instantly without sharing mobile numbers.
-                </p>
-
-                <div class="row mt-4">
-
-                    <div class="col-md-3 text-center">
-                        <i class="bi bi-house fs-1"></i>
-                        <h6>Homes</h6>
-                    </div>
-
-                    <div class="col-md-3 text-center">
-                        <i class="bi bi-car-front fs-1"></i>
-                        <h6>Vehicles</h6>
-                    </div>
-
-                    <div class="col-md-3 text-center">
-                        <i class="bi bi-building fs-1"></i>
-                        <h6>Offices</h6>
-                    </div>
-
-                    <div class="col-md-3 text-center">
-                        <i class="bi bi-box fs-1"></i>
-                        <h6>Deliveries</h6>
-                    </div>
-
-                </div>
-
+            <!-- small QR plate overlay -->
+            <div class="phone-qr-plate">
+              <span>QRBELL</span>
             </div>
-
+          </div>
         </div>
-
-    </div>
-
-</section>
-
-<!-- How It Works -->
-
-<section class="how-section py-5">
-
-    <div class="container text-center">
-
-        <small class="text-warning fw-bold">
-            HOW IT WORKS
-        </small>
-
-        <h2 class="fw-bold mb-5">
-            Simple. Instant. Secure.
-        </h2>
-
-        <div class="row">
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-                    <h5>Step 1</h5>
-                    <p>Place your QR Bell sticker or plate.</p>
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-                    <h5>Step 2</h5>
-                    <p>Visitor scans the QR code.</p>
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <div class="step-card">
-                    <h5>Step 3</h5>
-                    <p>Receive instant alert or call.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Use Cases -->
-
-<section class="py-5">
-
-    <div class="container">
-
-        <div class="text-center mb-5">
-            <small class="text-warning fw-bold">
-                ONE QR. MULTIPLE USES.
-            </small>
-
-            <h2 class="fw-bold">
-                Perfect For Every Need
-            </h2>
-        </div>
-
-        <div class="row g-4">
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/3.png" class="img-fluid">
-                    <h6>Home Bell</h6>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/5.png" class="img-fluid">
-                    <h6>Wrong Parking</h6>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/6.png" class="img-fluid">
-                    <h6>Delivery Contact</h6>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/7.png" class="img-fluid">
-                    <h6>Shops & Offices</h6>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/8.png" class="img-fluid">
-                    <h6>Apartments</h6>
-                </div>
-            </div>
-
-            <div class="col-lg-2 col-md-4">
-                <div class="use-card">
-                    <img src="assets/images/homepage/9.png" class="img-fluid">
-                    <h6>Fleet</h6>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Comparison -->
-
-<section class="comparison-section py-5">
-
-    <div class="container">
-
-        <h2 class="text-center fw-bold mb-4">
-            Why QRBELL Is Better
-        </h2>
-
-        <div class="table-responsive">
-
-            <table class="table table-bordered text-center">
-
-                <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>QRBELL</th>
-                    <th>Traditional Bell</th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>Wiring</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-
-                <tr>
-                    <td>Electricity</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-
-                <tr>
-                    <td>Portable</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-
-                <tr>
-                    <td>Privacy</td>
-                    <td>✔</td>
-                    <td>✖</td>
-                </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="cta-section">
-
-    <div class="container">
-
-        <div class="row align-items-center">
-
-            <div class="col-lg-8">
-                <h2>Ready to Upgrade to Smart Contact?</h2>
-                <p>Experience smarter, safer communication.</p>
-            </div>
-
-            <div class="col-lg-4 text-lg-end">
-                <a href="#" class="btn btn-warning btn-lg">
-                    Get QR Bell Now
-                </a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Footer -->
-
-<footer class="footer">
-
-    <div class="container text-center">
-
-        <p class="mb-0">
-            © 2025 QRBELL. All Rights Reserved.
+      </div>
+
+      <!-- Right – text + use icons -->
+      <div class="what-content">
+        <div class="section-label">WHAT IS QRBELL?</div>
+        <h2 class="section-heading">A Smarter Way to Connect</h2>
+        <p class="section-text">
+          QRBELL is a smart QR-based communication system that helps visitors, delivery partners or vehicle owners connect instantly – without sharing personal mobile numbers.
         </p>
 
+        <div class="use-icons-grid">
+          <div class="use-icon-item">
+            <div class="use-icon-circle">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <strong>Homes</strong>
+            <span>Smart Visitor communication</span>
+          </div>
+          <div class="use-icon-item">
+            <div class="use-icon-circle">
+              <i class="fa-solid fa-car"></i>
+            </div>
+            <strong>Vehicles</strong>
+            <span>Wrong parking alerts</span>
+          </div>
+          <div class="use-icon-item">
+            <div class="use-icon-circle">
+              <i class="fa-solid fa-building"></i>
+            </div>
+            <strong>Offices</strong>
+            <span>Professional visitor access</span>
+          </div>
+          <div class="use-icon-item">
+            <div class="use-icon-circle">
+              <i class="fa-solid fa-box"></i>
+            </div>
+            <strong>Deliveries</strong>
+            <span>No missed deliveries</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-</footer>
+  <!-- =========================================================
+       HOW IT WORKS
+  ========================================================== -->
+  <section class="how-section">
+    <div class="container">
+      <div class="section-label center">HOW IT WORKS</div>
+      <h2 class="section-heading center">Simple. Instant. Secure.</h2>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="steps-row">
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-circle">
+            <i class="fa-solid fa-qrcode"></i>
+          </div>
+          <div class="step-number">Step 1</div>
+          <p>Place your QRBELL sticker or plate.</p>
+        </div>
+
+        <div class="step-dots">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-circle">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <div class="step-number">Step 2</div>
+          <p>Visitor scans the QR.</p>
+        </div>
+
+        <div class="step-dots">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-circle">
+            <i class="fa-solid fa-bell"></i>
+          </div>
+          <div class="step-number">Step 3</div>
+          <p>Receive instant alert or call.</p>
+        </div>
+      </div>
+
+      <div class="how-note">No installation. No wiring. Works anywhere.</div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       USE CASES – PERFECT FOR EVERY NEED
+  ========================================================== -->
+  <section class="usecases-section">
+    <div class="container">
+      <div class="section-label center">ONE QR. MULTIPLE USES.</div>
+      <h2 class="section-heading center">Perfect for Every Need</h2>
+
+      <div class="use-cards-grid">
+
+        <div class="use-card">
+          <!-- Image placeholder: house / doorbell photo -->
+          <div class="use-card-img use-card-home">
+            <i class="fa-solid fa-house-chimney"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-bell"></i></div>
+          <h4>Home Bell</h4>
+          <p>Visitors can contact without pressing traditional bells.</p>
+        </div>
+
+        <div class="use-card">
+          <!-- Image placeholder: car / parking photo -->
+          <div class="use-card-img use-card-parking">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-circle-p"></i></div>
+          <h4>Wrong Parking</h4>
+          <p>Vehicle owner can be contacted instantly.</p>
+        </div>
+
+        <div class="use-card">
+          <!-- Image placeholder: delivery person photo -->
+          <div class="use-card-img use-card-delivery">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-box-open"></i></div>
+          <h4>Delivery Contact</h4>
+          <p>Faster, easier and more reliable deliveries.</p>
+        </div>
+
+        <div class="use-card">
+          <!-- Image placeholder: office/shop photo -->
+          <div class="use-card-img use-card-office">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-building"></i></div>
+          <h4>Shops &amp; Offices</h4>
+          <p>Professional and hassle-free visitor communication.</p>
+        </div>
+
+        <div class="use-card">
+          <!-- Image placeholder: apartment/society photo -->
+          <div class="use-card-img use-card-apartment">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-people-roof"></i></div>
+          <h4>Apartments / RWA</h4>
+          <p>Privacy-safe communication for residents.</p>
+        </div>
+
+        <div class="use-card">
+          <!-- Image placeholder: fleet/truck photo -->
+          <div class="use-card-img use-card-fleet">
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="use-card-icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>Fleet &amp; Logistics</h4>
+          <p>Vehicle issue reporting made simple and smart.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       COMPARISON TABLE – WHY QRBELL IS BETTER
+  ========================================================== -->
+  <section class="compare-section">
+    <div class="container compare-inner">
+
+      <div class="compare-content">
+        <h2 class="section-heading white">WHY QRBELL IS BETTER</h2>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="yellow">QRBELL</th>
+              <th>Traditional Bell</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Wiring</td>
+              <td><span class="badge-no"><i class="fa-solid fa-xmark"></i> No</span></td>
+              <td><span class="badge-yes-trad"><i class="fa-solid fa-check"></i> Yes</span></td>
+            </tr>
+            <tr>
+              <td>Electricity</td>
+              <td><span class="badge-no"><i class="fa-solid fa-xmark"></i> No</span></td>
+              <td><span class="badge-yes-trad"><i class="fa-solid fa-check"></i> Yes</span></td>
+            </tr>
+            <tr>
+              <td>Portable</td>
+              <td><span class="badge-yes"><i class="fa-solid fa-check"></i> Yes</span></td>
+              <td><span class="badge-yes-trad"><i class="fa-solid fa-check"></i> Yes</span></td>
+            </tr>
+            <tr>
+              <td>Number Privacy</td>
+              <td><span class="badge-yes"><i class="fa-solid fa-check"></i> Yes</span></td>
+              <td><span class="badge-no-trad"><i class="fa-solid fa-xmark"></i> No</span></td>
+            </tr>
+            <tr>
+              <td>Smart Alerts</td>
+              <td><span class="badge-yes"><i class="fa-solid fa-check"></i> Yes</span></td>
+              <td><span class="badge-no-trad"><i class="fa-solid fa-xmark"></i> No</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right – product image -->
+      <div class="compare-product">
+        <div class="compare-plate">
+          <div class="compare-plate-inner">
+            <div class="cp-brand">QRBELL</div>
+            <div class="cp-qr"><div class="qr-mock-sm"></div></div>
+            <div class="cp-label">SCAN TO CONNECT</div>
+          </div>
+        </div>
+        <!-- decorative plant -->
+        <div class="compare-deco"><i class="fa-solid fa-leaf"></i></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FINAL CTA BANNER
+  ========================================================== -->
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h2>Ready to Upgrade to Smart Contact?</h2>
+        <p>Experience smarter, safer and more private communication with QRBELL.</p>
+      </div>
+      <div class="cta-btns">
+        <button class="btn-primary">Get Your QR Bell Now <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn-outline-light"><i class="fa-solid fa-circle-play"></i> Watch Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER BAR
+  ========================================================== -->
+  <footer class="footer-bar">
+    <div class="container footer-inner">
+      <div class="footer-items">
+        <span><i class="fa-solid fa-flag"></i> Made in India</span>
+        <span><i class="fa-solid fa-shield-halved"></i> Privacy Focused</span>
+        <span><i class="fa-solid fa-lock"></i> Secure &amp; Reliable</span>
+        <span><i class="fa-solid fa-headset"></i> Customer Support</span>
+      </div>
+      <div class="footer-phone">
+        <i class="fa-brands fa-whatsapp"></i>
+        +91 84484 84446
+        <small>Mon – Sat: 10 AM – 6 PM</small>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
