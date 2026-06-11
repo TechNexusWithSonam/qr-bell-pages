@@ -759,7 +759,6 @@ button { font-family: inherit; cursor: pointer; }
    ============================================================ */
 .usecases-section { 
     background: #f5f7fb; 
-    padding: 78px 0; 
   
   }
 .usecases-section .section-heading.center { margin-bottom: 36px; }
@@ -839,7 +838,7 @@ button { font-family: inherit; cursor: pointer; }
 /* ============================================================
    COMPARISON TABLE
    ============================================================ */
-.compare-section { background: #f5f7fb; padding: 78px 0; }
+.compare-section { background: #f5f7fb; padding: 8px 0; }
 
 .compare-inner {
   display: flex;
